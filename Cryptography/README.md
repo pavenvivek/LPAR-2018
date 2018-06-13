@@ -37,4 +37,4 @@ module Circle1 where
       apd (λ x → indS x C cbase cloop) loop ≡ cloop
 ```
 
-The tool automates the generation of code in the above module. Please see the test cases in Automation/test folder for more information.
+The tool automates the generation of the code in the above module. Please see the test cases in Automation/test folder for more information.
