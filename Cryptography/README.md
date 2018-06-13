@@ -1,10 +1,11 @@
 # CryptDB in Homotopy Type Theory
-This repository contains implementation for CryptDB.
+This repository contains implementation for CryptDB. 
 
-We have used an automation tool to generate the code for higher inductive type. The tool is still in development.
+We have used an automation tool to generate the code for higher inductive type. The tool is still under development.
 
 To understand what the tool generates, see the following example:
 
+```
 module Circle1 where
   private 
     data S₁* : Set where
@@ -34,5 +35,6 @@ module Circle1 where
     βindS : (C : S → Set) → 
       (cbase : C base) → (cloop : transport C loop cbase ≡ cbase) → 
       apd (λ x → indS x C cbase cloop) loop ≡ cloop
+```
 
 The tool automates the generation of code in the above module. Please see the test cases in Automation/test folder for more information.
