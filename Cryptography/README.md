@@ -6,10 +6,10 @@ We have used an automation tool to generate the code for higher inductive type. 
 To understand what the tool generates, see the following example:
 
 ```
-module Circle1 where
+module Circle where
   private 
-    data S₁* : Set where
-      base* : S₁*
+    data S* : Set where
+      base* : S*
 
   S : Set
   S = S*
