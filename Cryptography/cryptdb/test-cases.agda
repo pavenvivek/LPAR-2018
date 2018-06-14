@@ -15,7 +15,7 @@ open import Cryptography.cryptdb.ElGamal-Cryptosystem
 open import Cryptography.cryptdb.insert-delete-query
 open import Cryptography.cryptdb.increment-path
 open import Cryptography.cryptdb.encrypted-increment
-open import Cryptography.cryptdb.repository
+open import Cryptography.cryptdb.database
 
 open import Automation.utils.reflectionUtils
 open import Automation.utils.pathUtils

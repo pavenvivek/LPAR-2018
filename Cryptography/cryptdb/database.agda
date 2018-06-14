@@ -29,7 +29,7 @@ open import Automation.utils.reflectionUtils
 open import Automation.utils.pathUtils
 
 
-module Cryptography.cryptdb.repository where
+module Cryptography.cryptdb.database where
 
 module History_hit where
 
@@ -153,7 +153,7 @@ module History_hit where
 
 open History_hit public
 
-module Document_hit where
+module Database_hit where
 
 {-- cryptR : Higher inductive type representing the database tables as points and encryption, decryption functions and queries as paths --}
 
@@ -258,7 +258,7 @@ module Document_hit where
                                  (λ p q i r → ua (singleton-equiv {List Int} {List Int} {(crypt-increment-100 p q i)} (to-Singleton (crypt-increment-100 p q i))))
                                  (λ r → ua (singleton-equiv {List Int} {List Int} {id} (to-Singleton id)))
 
-open Document_hit public
+open Database_hit public
 
 
 {-- I-cryptR-insert-path : Interprets the insert-query path in cryptR as a path in the Universe given by insert function --}
